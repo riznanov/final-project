@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
-// import 'package:wedding_planner/pages/add_check_page.dart';
+
 
 class CheckScreen extends StatefulWidget {
   final String categoriId;
+  final String title;
 
-  CheckScreen({this.categoriId}) : super();
+  CheckScreen({this.categoriId, this.title}) : super();
 
   @override
   State createState() => _CheckScreenState();
@@ -29,16 +30,8 @@ class _CheckScreenState extends State<CheckScreen> {
       appBar: AppBar(
         elevation: 0.1,
         backgroundColor: Colors.blueGrey,
-        title: Text("Detail Checklist"),
-//         actions: <Widget>[
-//           IconButton(
-//             icon: Icon(Icons.add),
-//             onPressed: () {
-//               Navigator.push(context,
-//                   MaterialPageRoute(builder: (context) => AddCheckScreen()));
-//             },
-//           )
-//         ],
+        title: Text(widget.title),
+        
       ),
       body: Container(
         child: ListView.builder(
@@ -103,7 +96,7 @@ class _CheckScreenState extends State<CheckScreen> {
                                                         "Delete data failed")));
                                           }
                                         });
-                                        // getChecksByCategoriId(widget.categoriId);
+                                        getChecksByCategoriId();
                                   },
                                 ),
                                 FlatButton(

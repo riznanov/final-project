@@ -34,15 +34,15 @@ class _TodoScreenState extends State<TodoScreen> {
         elevation: 0.1,
         backgroundColor: Colors.blueGrey,
         title: Text(widget.title),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.add),
-            onPressed: () {
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: (context) => AddCheckScreen()));
-            },
-          )
-        ],
+//         actions: <Widget>[
+//           IconButton(
+//             icon: Icon(Icons.add),
+//             onPressed: () {
+//               // Navigator.push(context,
+//               //     MaterialPageRoute(builder: (context) => AddCheckScreen()));
+//             },
+//           )
+//         ],
       ),
       body: Container(
         child: ListView.builder(

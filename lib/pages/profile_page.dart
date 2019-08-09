@@ -100,9 +100,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
     var result = await showDatePicker(
         context: context,
-        initialDate: initialDate,
+        initialDate: new DateTime.now(),
         lastDate: new DateTime(2050),
-        firstDate: new DateTime.now());
+        firstDate: new DateTime(2019));
 
     if (result == null) return;
 

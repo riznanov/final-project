@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
-import 'package:wedding_planner/pages/add_check_page.dart';
+// import 'package:wedding_planner/pages/add_check_page.dart';
 
 class CheckScreen extends StatefulWidget {
   final String categoriId;
@@ -30,15 +30,15 @@ class _CheckScreenState extends State<CheckScreen> {
         elevation: 0.1,
         backgroundColor: Colors.blueGrey,
         title: Text("Detail Checklist"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.add),
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AddCheckScreen()));
-            },
-          )
-        ],
+//         actions: <Widget>[
+//           IconButton(
+//             icon: Icon(Icons.add),
+//             onPressed: () {
+//               Navigator.push(context,
+//                   MaterialPageRoute(builder: (context) => AddCheckScreen()));
+//             },
+//           )
+//         ],
       ),
       body: Container(
         child: ListView.builder(

@@ -55,7 +55,8 @@ class _ChecklistState extends State<Checklist> {
                             context,
                             MaterialPageRoute(
                                 builder: (BuildContext contex) => CheckScreen(
-                                    categoriId: categoriList[index]['id'])));
+                                  categoriId: categoriList[index]['id'], 
+                                  title: categoriList[index]['title'],)));
                       },
                       onLongPress: () {
                         showDialog(
